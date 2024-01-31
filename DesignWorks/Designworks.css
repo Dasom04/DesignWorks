@@ -1,1 +1,85 @@
 @import url(common.css);
+
+body {
+  font-family: "Gibson", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: orange;
+
+  position: relative;
+}
+
+header {
+  background-color: #000000B3;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+}
+
+header .inner-header {
+  width: 45%;
+  margin: 0 auto;
+  padding: 5px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header .inner-header .logo-box a {
+
+}
+
+header .inner-header .logo-box img {
+  width: 243px;
+  height: 53.5px;
+}
+
+header .inner-header .menu-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* header .inner-header .menu-box span.lnr-menu {
+  font-size: 30px;
+  color: white;
+} */
+
+header .inner-header .menu-box .button-box-wrap {
+  width: 37px;
+  height: 30px;
+
+  display: flex;
+  flex-flow: column;
+  
+  justify-content: space-between;
+}
+
+header .inner-header .menu-box .button-box-wrap .button {
+
+  width: 37px;
+  height: 7px;
+  background: white;
+}
+
+/* video-box */
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+}
+
+.bg-video .bg-video-content {
+  width: 100%;
+  
+}
+
+
+
+
+
