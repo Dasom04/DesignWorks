@@ -4,9 +4,9 @@ body {
   font-family: "Gibson", sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  background-color: orange;
-
   position: relative;
+
+  background: #F2F2F2;
 }
 
 header {
@@ -124,6 +124,89 @@ header .inner-header .menu-box .button-box-wrap .button {
 .bg-video div.angle-down-box span {
   color: white;
   font-size: 30px;
+}
+
+/* section.about */
+section.about {
+
+  width: 100%;
+}
+
+section.about .about-contents-wrap {
+  width: 45%;
+  margin: 80px auto;
+
+  display: flex;
+}
+
+section.about .about-contents h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #f7941d;
+  margin-bottom: 30px;
+}
+
+section.about .about-contents.first h2 {
+  color: black;
+  line-height: 1.2;
+}
+
+section.about .about-contents p {
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 30px;
+
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container .image-box {
+  margin: 0 auto;
+  width: 45%;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.image-container .image-box .image-box-first-line {
+  width: 50%;
+}
+
+.image-container .image-box .image-box-second-line {
+  width: 33.333%;
+}
+
+.image-container .image-box .image-box-else {
+  width: 25%;
+}
+
+
+div.text-block {
+  width: 45%;
+
+  margin: 70px auto;
+
+  display: flex;
+
+  padding-left: 20px;
+}
+
+div.text-block .column-bar {
+  flex: 1;
+  
+  border-left: 3px solid orange;
+}
+
+div.text-block p {
+  font-size: 36px;
+  font-family: sans-serif;
+  font-weight: 100;
+
+  flex: 15;
 }
 
 
