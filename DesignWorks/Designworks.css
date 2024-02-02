@@ -111,32 +111,6 @@ nav.side-bar ul li:hover {
 
 }
 
-
-/* nav.side-bar ul li */
-
-/* nav.side-bar */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* bg-video */
 
 .bg-video {
@@ -256,6 +230,21 @@ section.about .about-contents p {
 .image-container .image-box .image-box-else {
   width: 25%;
 }
+
+/* section.image-container .image-box .image-box-first-line::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  background: rgba(27, 27, 27, 0.8);
+
+  position: absolute;
+  transition: 0.6s;
+}
+
+section.image-container .image-box .image-box-first-line:hover::before {
+  width: 100%;
+} */
+
 
 
 div.text-block {
