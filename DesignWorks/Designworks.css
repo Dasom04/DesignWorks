@@ -1,74 +1,58 @@
 @import url(common.css);
 
-body {
-  font-family: "Gibson", sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
 
-  background: #F2F2F2;
 
-  position: relative;
-}
+/* logo */
 
-header {
-  background-color: #000000B3;
+/* logo img */
 
+.logos {
   width: 100%;
-  position: fixed;
-  top: 0;
-
-  z-index: 999;
-
-
-
-}
-
-header .inner-header {
-  width: 50%;
-  margin: 0 auto;
-  padding: 5px 0;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-header .inner-header .logo-box img {
-  width: 243px;
-  height: 53.5px;
-}
-
-/* 햄버거 버튼 */
-header .inner-header .menu-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-input#menu-icon {
-  display: none;
-}
-
-input#menu-icon + label {
-
-  display: block;
-  width: 37px;
-  height: 30px;
-  cursor: pointer;
-
   position: relative;
+  padding: 55px 0;
 }
 
-input#menu-icon + label > span {
-  display: block;
-  width: 37px;
-  height: 8px;
-
-  background: white;
-
-  position: absolute;
+.logos .logo-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
+.logos .logo-img li  {
+  margin-right: 80px;
+  margin-left: 26px;
+}
 
+.logos .logo-img li img {
+  height: auto;
+} 
+
+.logos .logo-img #logo1 img {
+  width: 160px;
+  height: 66px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.logos .logo-img #logo2 img {
+  width: 135px;
+  height: 76px;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+
+.logos .logo-img #logo3 img {
+  width: 162px;
+  height: 94px;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+
+.logos .logo-img #logo4 img {
+  width: 108px;
+  height: 108px;
+}
 input#menu-icon + label > span:nth-child(1) {
   top: 0;
 }
@@ -315,7 +299,573 @@ section.about .about-contents p {
   font-weight: 100;
 }
 
-/* image */
+
+/* <!-- Humanising Technology --> */
+
+
+.human {
+  width: 100%;
+  line-height: 1.3;
+  font-family: sans-serif;
+}
+
+.human .human-content h2 {
+  color: #000;
+  font-size: 57px;
+  font-weight: 100;
+  border-left: 3px solid #f7941d;
+  padding-left: 40px;
+  margin: 80px 24.5% 0px ;
+  letter-spacing: -1px;
+  word-spacing: -3px;
+  line-height-step: 1.8;
+}
+
+.human .human-content p {
+ font-size: 32px;
+ border-left: 3px solid #f7941d;
+ padding-left: 40px;
+ font-weight: 100;
+ box-sizing: border-box;
+ margin: 0px 24.5% 100px ;
+ line-height: 1.5;
+}
+
+
+/* we work with */
+
+
+section.middle2 {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+section.middle2 .work {
+  width: 100%;
+  height: 835px;
+  background: url(../DesignWorks/Dasom-img/we_work_background.jpg) no-repeat center / cover;
+}
+
+section.middle2 .work h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 500;
+  padding-top: 70px;
+}
+
+section.middle2 .work .bottom-line {
+  width: 2.2%;
+  border-bottom: 2px solid #fff;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+
+section.middle2 .work h3 {
+  color: orange;
+  font-weight: 700;
+  margin-left: 35%;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: 700;
+  border-left: 3px solid #f7941d;
+  padding-left: 35px;
+}
+
+section.middle2 .work p {
+  color: #fff;
+  font-size: 22px;
+  margin-left: 35%;
+  font-weight: 100;
+  border-left: 3px solid #f7941d;
+  padding-left: 35px;
+  line-height: 1.4;
+}
+
+section.middle2 .work .img-box {
+  width: 100%;
+}
+
+section.middle2 .work .img-box ul{
+  display: flex;
+  margin-left: 25%;
+}
+
+section.middle2 .work .img-box ul li {
+ margin-top: 70px;
+ margin-right: 2%;
+}
+ 
+section.middle2 .work .img-box ul li img {
+  width: 293.33px;
+  position: relative; 
+}
+
+
+section.middle2 .work .img-box ul li .name1 {
+  font-size: 30px;
+  color: #fff;
+  font-weight:700;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: -1px;
+  word-spacing: -3px;
+  position: relative;
+  bottom: 165px;
+} 
+
+section.middle2 .work .img-box ul li .name2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight:700;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: -1px;
+  word-spacing: -3px;
+  position: relative;
+  bottom: 180px;
+  text-decoration: none;
+}
+
+section.middle2 .work .img-box ul a .lnr {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 100;
+  position: relative;
+  top: 390px;
+  right: 510px;
+}
+
+section.middle2 .work .img-box ul a {
+  text-decoration: none;
+}
+
+
+
+
+/*  we work whit hover */
+
+
+section.middle2 .work .img-box ul li img:hover {
+  transform: scale(0.95 , 0.95);
+  transition: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+section.middle2 .work .img-box ul li img:hover::after {
+  animation-fill-mode: forwards;
+}
+
+section.middle2 .work .img-box ul a .lnr:hover {
+  color: #f7941d;
+}
+
+section.middle2 .work .img-box ul li .circle {
+  width: 293.33px;
+  height: 293.33px;
+  margin: 0 auto;
+  background: #f7941d;
+  border-radius: 50%;
+body {
+  font-family: "Gibson", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+
+  background: #F2F2F2;
+
+  position: relative;
+}
+
+
+
+
+
+
+
+/* ============================ */
+
+header {
+  background-color: #000000B3;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+  z-index: 999;
+
+
+
+}
+
+header .inner-header {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header .inner-header .logo-box img {
+  width: 243px;
+  height: 53.5px;
+}
+
+/* 햄버거 버튼 */
+header .inner-header .menu-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input#menu-icon {
+  display: none;
+}
+
+input#menu-icon + label {
+
+  display: block;
+  width: 37px;
+  height: 30px;
+  cursor: pointer;
+
+  position: relative;
+}
+
+input#menu-icon + label > span {
+  display: block;
+  width: 37px;
+  height: 8px;
+
+  background: white;
+
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================== */
+
+/* logo */
+
+/* logo img */
+
+.logos {
+  width: 100%;
+  position: relative;
+  padding: 55px 0;
+}
+
+.logos .logo-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logos .logo-img li  {
+  margin-right: 80px;
+  margin-left: 26px;
+}
+
+.logos .logo-img li img {
+  height: auto;
+} 
+
+.logos .logo-img #logo1 img {
+  width: 160px;
+  height: 66px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.logos .logo-img #logo2 img {
+  width: 135px;
+  height: 76px;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+
+.logos .logo-img #logo3 img {
+  width: 162px;
+  height: 94px;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+
+.logos .logo-img #logo4 img {
+  width: 108px;
+  height: 108px;
+}
+input#menu-icon + label > span:nth-child(1) {
+  top: 0;
+}
+
+input#menu-icon + label > span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input#menu-icon + label > span:nth-child(3) {
+  bottom: 0;
+}
+
+
+/* header .inner-header .menu-box .button-box-wrap {
+  width: 37px;
+  height: 30px;
+
+  display: flex;
+  flex-flow: column;
+
+  justify-content: space-between;
+
+} */
+
+/* header .inner-header .menu-box .button-box-wrap:hover {
+  cursor: pointer;
+} */
+
+/* header .inner-header .menu-box .button-box-wrap .button {
+
+ width: 37px;
+  height: 7px;
+  background: white;
+} */
+
+input#menu-icon:checked + label + #side-bar {
+  right: 0px;
+}
+input#menu-icon:checked + label > span {
+  transition: all 0.3s;
+}
+
+input#menu-icon:checked + label > span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+input#menu-icon:checked + label > span:nth-child(2) {
+  display: none;
+}
+
+input#menu-icon:checked + label > span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+/* nav.side-bar */
+nav.side-bar {
+  /* position: relative;
+  z-index: 1; */
+
+  position: absolute;
+  /* top을 0으로 설정해 위 바로 밑에 딱 붙게 함 */
+  top: 0;
+  /* nav.side-bar를 화면 밖으로 배치 */
+  right: -1000px;
+
+  margin-top: 70px;
+  margin-left: 50%;
+
+  /* padding: 70px 160px; */
+  width: 50%;
+  height: 100vh;
+
+  background: #000000;
+  opacity: 0.6;
+
+  line-height: 1.25;
+
+  transition: all 0.3s;
+}
+
+nav.side-bar ul {
+  /* height: 1000px; */
+  /* padding: 30px 40px; */
+  /* padding: 100px 0 0 180px; */
+  padding: 10% 0 10% 15%;
+
+  overflow-y: scroll;
+}
+
+nav.side-bar ul li {
+  font-family: sans-serif;
+  font-weight: 100;
+  color: #fff;
+  font-size: 45px;
+  border: 4px solid black;
+  width: 100%;
+}
+
+nav.side-bar ul li:hover {
+  border-bottom: 2px solid #f7941d;
+  font-weight: 500;
+  color: #f7941d;
+  /* text-decoration: red; */
+
+}
+
+/* bg-video */
+
+.bg-video {
+  width: 100%;
+  height: 730px;
+  margin-bottom: 5%;
+  position: relative;  
+  /* background-color: #f7941d;/
+
+
+
+  top: 0;
+  left: 0;
+   */
+}
+
+.bg-video .video-content-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  /* z-index: -1; */
+}
+
+.bg-video .video-content-wrap .video-content {
+  
+}
+
+.bg-video .video-content-wrap .title {
+  width: 50%;
+
+  margin: 0 auto;
+}
+
+.bg-video .video-content-wrap .title h1 {
+
+  margin-top: 380px;
+
+  font-size: 65px;
+  line-height: 1.1;
+  width: 100%;
+  color: white;
+  font-weight: 400;
+}
+
+
+.bg-video .video-content-wrap .title h1 strong {
+  font-weight: 700;
+}
+
+.bg-video .video-content-wrap .video-content {
+  position: absolute;
+
+  z-index: -1;
+
+  width: 100%;
+}
+
+/* .bg-video .title {
+  position: absolute;
+  z-index: 1;
+
+  font-size: 48px;
+  line-height: 54px;
+  width: 100%;
+  color: white;
+  font-weight: 400;
+
+  margin-left: 520px;
+  margin-top: 450px;
+} */
+
+/* 화살표버튼을 감싸는 박스 */
+.bg-video .video-content-wrap .angle-down-box {
+  position: absolute;
+  z-index: 1;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 80px;
+
+  /* margin-top: 650px; */
+}
+
+.bg-video div.angle-down-box a span {
+  color: white;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.bg-video div.angle-down-box a span:hover {
+  color: #f7941d;
+}
+
+/* section.about */
+section.about {
+
+  width: 100%;
+}
+
+section.about .about-contents-wrap {
+  width: 50%;
+  margin: 80px auto;
+
+  display: flex;
+}
+
+section.about .about-contents.first {
+  margin-right: 30px;
+}
+
+section.about .about-contents h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #f7941d;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+section.about .about-contents.first h2 {
+  color: black;
+
+}
+
+section.about .about-contents p {
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 30px;
+
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+
+
+/* ============================================= */
+
+
+
+
+
+
+
+
+
 .image-container {
   width: 100%;
 }
