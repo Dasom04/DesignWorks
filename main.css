@@ -1,4 +1,5 @@
 @import url(common.css);
+
 body {
   font-family: "Gibson", sans-serif;
   font-size: 18px;
@@ -44,7 +45,7 @@ input#menu-icon {
   display: none;
 }
 
-input#menu-icon + label {
+input#menu-icon+label {
 
   display: block;
   width: 37px;
@@ -54,7 +55,7 @@ input#menu-icon + label {
   position: relative;
 }
 
-input#menu-icon + label > span {
+input#menu-icon+label>span {
   display: block;
   width: 37px;
   height: 8px;
@@ -65,36 +66,37 @@ input#menu-icon + label > span {
 }
 
 
-input#menu-icon + label > span:nth-child(1) {
+input#menu-icon+label>span:nth-child(1) {
   top: 0;
 }
 
-input#menu-icon + label > span:nth-child(2) {
+input#menu-icon+label>span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
 
-input#menu-icon + label > span:nth-child(3) {
+input#menu-icon+label>span:nth-child(3) {
   bottom: 0;
 }
 
-input#menu-icon:checked + label + #side-bar {
+input#menu-icon:checked+label+#side-bar {
   right: 0px;
 }
-input#menu-icon:checked + label > span {
+
+input#menu-icon:checked+label>span {
   transition: all 0.3s;
 }
 
-input#menu-icon:checked + label > span:nth-child(1) {
+input#menu-icon:checked+label>span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
 }
 
-input#menu-icon:checked + label > span:nth-child(2) {
+input#menu-icon:checked+label>span:nth-child(2) {
   display: none;
 }
 
-input#menu-icon:checked + label > span:nth-child(3) {
+input#menu-icon:checked+label>span:nth-child(3) {
   bottom: 50%;
   transform: translateY(50%) rotate(-45deg);
 }
@@ -153,13 +155,11 @@ nav.side-bar ul li:hover {
 
 /* bg-video */
 
-/* bg-video */
-
 .bg-video {
   width: 100%;
   height: 730px;
   margin-bottom: 5%;
-  position: relative;  
+  position: relative;
 }
 
 .bg-video .video-content-wrap {
@@ -226,16 +226,13 @@ nav.side-bar ul li:hover {
 }
 
 /* section.about */
-/* section.about */
 section.about {
-
   width: 100%;
 }
 
 section.about .about-contents-wrap {
   width: 50%;
   margin: 80px auto;
-
   display: flex;
 }
 
@@ -265,78 +262,130 @@ section.about .about-contents p {
   font-weight: 100;
 }
 
+/* 13개 이미지 작업*/
 .image-container {
   width: 100%;
 }
 
-.image-container .image-first-line {
+/* 이미지 첫번째, 두번째, 나머지(세번째, 네번째) 라인: 실제 이미지를 감싸는 박스들을 감싸는 박스(즉, 라인박스) */
+.image-container .image-first-line,
+.image-container .image-second-line,
+.image-container .image-else-line {
   margin: 0 auto;
   width: 50%;
 
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
-.image-container .image-first-line .img1-box, .image-container .image-first-line .img2-box {
+/* 이미지 첫번째 라인: 실제 이미지를 감싸는 박스 크기 조정 */
+.image-container .image-first-line .img1-box,
+.image-container .image-first-line .img2-box {
   width: 50%;
 
   position: relative;
   overflow: hidden;
-
 }
 
-.image-container .image-first-line .img1-box .img1-content, .image-container .image-first-line .img2-box .img2-content {
-  width: 100%;
-}
-
-.image-container .image-first-line .img1-box .box1 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
+/* 이미지 두번째 라인: 실제 이미지를 감싸는 박스 크기 조정 */
+.image-container .image-second-line .img3-box,
+.image-container .image-second-line .img4-box,
+.image-container .image-second-line .img5-box {
+  width: 33.333%;
+  position: relative;
   overflow: hidden;
+}
 
+/* 이미지 나머지(세번째, 네번째) 라인: 실제 이미지를 감싸는 박스 크기 조정 */
+.image-container .image-else-line .img6-box,
+.image-container .image-else-line .img7-box,
+.image-container .image-else-line .img8-box,
+.image-container .image-else-line .img9-box,
+.image-container .image-else-line .img10-box,
+.image-container .image-else-line .img11-box,
+.image-container .image-else-line .img12-box,
+.image-container .image-else-line .img13-box {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 이미지 첫번째, 두번째 라인, 나머지(세번째, 네번째) 라인: 실제 이미지 크기 조정 */
+.image-container .image-first-line .img1-box .img1-content,
+.image-container .image-first-line .img2-box .img2-content,
+.image-container .image-second-line .img3-box .img3-content,
+.image-container .image-second-line .img4-box .img4-content,
+.image-container .image-second-line .img5-box .img5-content,
+.image-container .image-else-line .img6-box .img6-content,
+.image-container .image-else-line .img7-box .img7-content,
+.image-container .image-else-line .img8-box .img8-content,
+.image-container .image-else-line .img9-box .img9-content,
+.image-container .image-else-line .img10-box .img10-content,
+.image-container .image-else-line .img11-box .img11-content,
+.image-container .image-else-line .img12-box .img12-content,
+.image-container .image-else-line .img13-box .img13-content {
+  position: relative;
+  width: 100%;
+}
+
+/* 이미지 hover시 나타나는 효과 미구현 */
+/* 이미지 첫번째 라인 각 사진에 hover시 나타날 효과 작업: 1) 투명도 있는 박스 */
+/* , .image-container .image-first-line .img2-box .box2 .img2-content::after  */
+/* .image-container .image-first-line .img1-box .img1-content .box1 {
+  position: absolute;
   left: 0;
   top: 0;
-  
+
+  width: 0;
+  height: 500px;
+
   background-color: black;
   opacity: 0.4;
-}
-
-.image-container .image-first-line .img1-box .img-text {
-  position: absolute;
   
+} */
+
+/* .image-container .image-first-line .img1-box .img1-content:hover::after{
+  width: 100%;
+  opacity: 0.4;
+} */
+/*. image-container .image-first-line .img2-box .box2 */
+
+/* 2) 글자 */
+.image-container .image-first-line .img1-box .img-text, .image-container .image-first-line .img2-box .img-text {
+  position: absolute;
+
   left: 0;
-  top: 0;
+  bottom: 0;
 
   padding: 20px;
   font-weight: 700;
-
-
 }
 
-.image-container .image-first-line .img1-box .img-text p:nth-of-type(1) {
+.image-container .image-first-line .img1-box .img-text p:nth-of-type(1), .image-container .image-first-line .img2-box .img-text p:nth-of-type(1) {
   color: #f7941d;
   font-size: 60px;
 
   margin-bottom: 10px;
+  line-height: 1.1em;
 }
 
-.image-container .image-first-line .img1-box .img-text span {
+.image-container .image-first-line .img1-box .img-text span, .image-container .image-first-line .img2-box .img-text span {
   display: block;
 
   width: 50px;
   height: 2px;
 
   background-color: #f7941d;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
-.image-container .image-first-line .img1-box .img-text p:nth-of-type(2) {
+.image-container .image-first-line .img1-box .img-text p:nth-of-type(2), .image-container .image-first-line .img2-box .img-text p:nth-of-type(2) {
   font-size: 20px;
   color: #ccc;
   font-weight: 100;
 }
+
+/* ------------------------- */
 
 div.text-block {
   width: 60%;
@@ -376,6 +425,7 @@ section.process .contents .description {
   width: 1000px;
   margin: 0 auto;
 }
+
 section.process .contents .title {
   padding-top: 65px;
   color: #fff;
@@ -437,7 +487,7 @@ section.process .contents {
   fill-opacity: 0;
 }
 
-.first >.diamond-1 {
+.first>.diamond-1 {
   fill-opacity: 0.4;
 }
 
@@ -501,20 +551,20 @@ section.process .contents .diagram p span.lnr:hover {
   font-weight: 100;
   border-left: 3px solid #f7941d;
   padding-left: 40px;
-  margin: 80px 24.5% 0px ;
+  margin: 80px 24.5% 0px;
   letter-spacing: -1px;
   word-spacing: -3px;
   line-height-step: 1.8;
 }
 
 .human .human-content p {
- font-size: 32px;
- border-left: 3px solid #f7941d;
- padding-left: 40px;
- font-weight: 100;
- box-sizing: border-box;
- margin: 0px 24.5% 100px ;
- line-height: 1.5;
+  font-size: 32px;
+  border-left: 3px solid #f7941d;
+  padding-left: 40px;
+  font-weight: 100;
+  box-sizing: border-box;
+  margin: 0px 24.5% 100px;
+  line-height: 1.5;
 }
 
 
@@ -572,38 +622,38 @@ section.middle2 .work .img-box {
   width: 100%;
 }
 
-section.middle2 .work .img-box ul{
+section.middle2 .work .img-box ul {
   display: flex;
   margin-left: 25%;
 }
 
 section.middle2 .work .img-box ul li {
- margin-top: 70px;
- margin-right: 2%;
+  margin-top: 70px;
+  margin-right: 2%;
 }
- 
+
 section.middle2 .work .img-box ul li img {
   width: 293.33px;
-  position: relative; 
+  position: relative;
 }
 
 
 section.middle2 .work .img-box ul li .name1 {
   font-size: 30px;
   color: #fff;
-  font-weight:700;
+  font-weight: 700;
   text-align: center;
   line-height: 1;
   letter-spacing: -1px;
   word-spacing: -3px;
   position: relative;
   bottom: 165px;
-} 
+}
 
 section.middle2 .work .img-box ul li .name2 {
   font-size: 30px;
   color: #fff;
-  font-weight:700;
+  font-weight: 700;
   text-align: center;
   line-height: 1;
   letter-spacing: -1px;
@@ -631,7 +681,7 @@ section.middle2 .work .img-box ul a {
 
 
 section.middle2 .work .img-box ul li img:hover {
-  transform: scale(0.95 , 0.95);
+  transform: scale(0.95, 0.95);
   transition: 0.4s;
   animation-fill-mode: forwards;
 }
@@ -671,14 +721,14 @@ section.middle2 .work .img-box ul li .circle {
   align-items: center;
 }
 
-.logos .logo-img li  {
+.logos .logo-img li {
   margin-right: 80px;
   margin-left: 26px;
 }
 
 .logos .logo-img li img {
   height: auto;
-} 
+}
 
 .logos .logo-img #logo1 img {
   width: 160px;
@@ -717,13 +767,13 @@ section.marketing .txt-contents {
   width: 990px;
   margin: 80px auto 85px;
   display: flex;
-  
+
 }
 
-section.marketing .txt-contents h2{
+section.marketing .txt-contents h2 {
   font-size: 30px;
-  margin-bottom:24px;
-} 
+  margin-bottom: 24px;
+}
 
 section.marketing .txt-contents .left-one {
   width: 470px;
@@ -744,7 +794,7 @@ section.marketing .txt-contents p {
   font-size: 23px;
   font-weight: 400;
   margin-bottom: 20px;
-  
+
 }
 
 /* section.equries style */
@@ -816,10 +866,11 @@ section.enquries .inner article .address {
 section.enquries .inner article .address h2 {
   margin-top: 20px;
 }
- 
+
 section.enquries .inner article .address p.address-content {
   height: 180px;
 }
+
 section.enquries .inner article .address p.address-content {
   margin-top: 15px;
 }
@@ -865,7 +916,7 @@ section.enquries .inner article .right form input:hover,
 section.enquries .inner article .right form input:focus,
 section.enquries .inner article .right form textarea:hover,
 section.enquries .inner article .right form textarea:focus {
-  background-color: rgba(255, 255, 255, 0.1) ;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 section.enquries .inner article .right form textarea {
@@ -887,7 +938,7 @@ section.enquries .inner article .right form input.btn {
   height: 45px;
   font-weight: 700;
   background-color: #f7941d;
-  border: 0; 
+  border: 0;
   position: absolute;
   right: 0;
 }
@@ -957,11 +1008,7 @@ footer>p {
 
 /* ================ 반응형 웹 디자인 ================ */
 /* 태블릿 1024px 이하 해상도(아이패드 프로) */
-@media (max-width: 1024px) {
-
-}
+@media (max-width: 1024px) {}
 
 /* 태블릿 768px 이하 해상도 (아이패드 미니) */
-@media (max-width:768px) {
-
-}
+@media (max-width:768px) {}
