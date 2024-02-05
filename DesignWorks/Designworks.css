@@ -1,1 +1,238 @@
 @import url(common.css);
+
+
+/* <!-- Humanising Technology --> */
+
+
+.human {
+  width: 100%;
+  line-height: 1.3;
+  font-family: sans-serif;
+}
+
+.human .human-content h2 {
+  color: #000;
+  font-size: 57px;
+  font-weight: 100;
+  border-left: 3px solid #f7941d;
+  padding-left: 40px;
+  margin: 80px 24.5% 0px ;
+  letter-spacing: -1px;
+  word-spacing: -3px;
+  line-height-step: 1.8;
+}
+
+.human .human-content p {
+ font-size: 32px;
+ border-left: 3px solid #f7941d;
+ padding-left: 40px;
+ font-weight: 100;
+ box-sizing: border-box;
+ margin: 0px 24.5% 100px ;
+ line-height: 1.5;
+}
+
+
+/* we work with */
+
+
+section.middle2 {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+section.middle2 .work {
+  width: 100%;
+  height: 835px;
+  background: url(../DesignWorks/Dasom-img/we_work_background.jpg) no-repeat center / cover;
+}
+
+section.middle2 .work h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 500;
+  padding-top: 70px;
+}
+
+section.middle2 .work .bottom-line {
+  width: 2.2%;
+  border-bottom: 2px solid #fff;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+
+section.middle2 .work h3 {
+  color: orange;
+  font-weight: 700;
+  margin-left: 35%;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: 700;
+  border-left: 3px solid #f7941d;
+  padding-left: 35px;
+}
+
+section.middle2 .work p {
+  color: #fff;
+  font-size: 22px;
+  margin-left: 35%;
+  font-weight: 100;
+  border-left: 3px solid #f7941d;
+  padding-left: 35px;
+  line-height: 1.4;
+}
+
+section.middle2 .work .img-box {
+  width: 100%;
+}
+
+section.middle2 .work .img-box ul{
+  display: flex;
+  margin-left: 25%;
+}
+
+section.middle2 .work .img-box ul li {
+ margin-top: 70px;
+ margin-right: 2%;
+}
+ 
+section.middle2 .work .img-box ul li img {
+  width: 293.33px;
+  position: relative; 
+}
+
+
+section.middle2 .work .img-box ul li .name1 {
+  font-size: 30px;
+  color: #fff;
+  font-weight:700;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: -1px;
+  word-spacing: -3px;
+  position: relative;
+  bottom: 165px;
+} 
+
+section.middle2 .work .img-box ul li .name2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight:700;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: -1px;
+  word-spacing: -3px;
+  position: relative;
+  bottom: 180px;
+  text-decoration: none;
+}
+
+section.middle2 .work .img-box ul a .lnr {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 100;
+  position: relative;
+  top: 390px;
+  right: 510px;
+}
+
+section.middle2 .work .img-box ul a {
+  text-decoration: none;
+}
+
+
+
+
+/*  we work whit hover */
+
+
+section.middle2 .work .img-box ul li img:hover {
+  transform: scale(0.95 , 0.95);
+  transition: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+section.middle2 .work .img-box ul li img:hover::after {
+  animation-fill-mode: forwards;
+}
+
+section.middle2 .work .img-box ul a .lnr:hover {
+  color: #f7941d;
+}
+
+section.middle2 .work .img-box ul li .circle {
+  width: 293.33px;
+  height: 293.33px;
+  margin: 0 auto;
+  background: #f7941d;
+  border-radius: 50%;
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* logo */
+
+/* logo img */
+
+.logos {
+  width: 100%;
+  position: relative;
+  padding: 55px 0;
+}
+
+.logos .logo-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logos .logo-img li  {
+  margin-right: 80px;
+  margin-left: 26px;
+}
+
+.logos .logo-img li img {
+  height: auto;
+} 
+
+.logos .logo-img #logo1 img {
+  width: 160px;
+  height: 66px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.logos .logo-img #logo2 img {
+  width: 135px;
+  height: 76px;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+
+.logos .logo-img #logo3 img {
+  width: 162px;
+  height: 94px;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+
+.logos .logo-img #logo4 img {
+  width: 108px;
+  height: 108px;
+}
